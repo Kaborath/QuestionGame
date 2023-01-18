@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:id="@+id/tv_zone"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            tools:text="Valparaiso,Chile"
+            android:textSize="30dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="70dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            >
+        </TextView>
+        <TextView
+            android:layout_width="450sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/tittle_border"
+            android:text="¡Bienvenidos a este increible juego de preguntas!"
+            android:textSize="30sp"
+            android:textColor="#266729"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:gravity="center_horizontal"
+            >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_Play"
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:text="Jugar"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:backgroundTint="#3AB0FF"
+            app:cornerRadius="20dp">
+        </com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_Tutorial"
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"
+            android:text="Como jugar"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:backgroundTint="#FFB562"
+            app:cornerRadius="20dp">
+        </com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_Config"
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:text="Configurar"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:backgroundTint="#F87474"
+            app:cornerRadius="20dp">
+        </com.google.android.material.button.MaterialButton>
+    </LinearLayout>
+</LinearLayout>

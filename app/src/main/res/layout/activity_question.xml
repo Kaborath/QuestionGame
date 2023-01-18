@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionActivity"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginStart="100dp"
+            >
+            <ImageView
+                android:id="@+id/iv_TeamPortrait"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+            </ImageView>
+            <TextView
+                android:id="@+id/tv_TeamPortraitName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Jane"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                >
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/tv_QuestionNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:text="Pregunta 1"
+                android:layout_gravity="center"
+                >
+            </TextView>
+            <TextView
+                android:id="@+id/tv_Pregunta"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:text="Encabezado de pregunta"
+                android:layout_gravity="center"
+                android:layout_marginEnd="20dp"
+                >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_OptionOne"
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            android:layout_marginEnd="40dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:backgroundTint="#F87474"
+            app:cornerRadius="20dp"
+            tools:text="Respuesta 1">
+        </com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_OptionTwo"
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            android:layout_marginEnd="40dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:backgroundTint="#3AD23A"
+            app:cornerRadius="20dp"
+            tools:text="Respuesta 2">
+        </com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_OptionThree"
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            android:layout_marginEnd="40dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:backgroundTint="#DBDB4A"
+            app:cornerRadius="20dp"
+            tools:text="Respuesta 2">
+        </com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_OptionFour"
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:backgroundTint="#4A4ADC"
+            app:cornerRadius="20dp"
+            tools:text="Respuesta 4"
+            >
+        </com.google.android.material.button.MaterialButton>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TeamSetActivity"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cantidad de jugadores en equipo:"
+            android:textSize="50sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginStart="50dp"
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/tv_PlayersPerTeam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="#F87474"
+            android:textSize="100sp"
+            android:layout_marginStart="20dp"
+            >
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_1Player"
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:text="1 Persona"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:backgroundTint="#3AB0FF"
+            app:cornerRadius="20dp">
+        </com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_2Players"
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"
+            android:text="2 Personas"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:backgroundTint="#FFB562"
+            app:cornerRadius="20dp">
+        </com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_3Players"
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:text="3 Personas"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:backgroundTint="#F87474"
+            app:cornerRadius="20dp">
+        </com.google.android.material.button.MaterialButton>
+    </LinearLayout>
+</LinearLayout>
